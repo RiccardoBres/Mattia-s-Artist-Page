@@ -1,0 +1,26 @@
+// _sidebar.scss
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-width: 40vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    opacity: 0;
+    transition: opacity 1s ease; 
+
+    &.expanded {
+        opacity: 1;
+    }
+    .content-sidebar {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 100%;
+        color: white;
+    }
+}

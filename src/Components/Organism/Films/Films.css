@@ -1,0 +1,16 @@
+.container-films{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-films{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:650px){
+    .col-films{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,40 @@
+.nav-logo{
+    width: 150px;
+}
+.container-log{
+    z-index: 100;
+
+}
+.nav-links{
+    cursor: pointer;
+}
+.nav-links-works{
+    cursor: pointer;
+    z-index: 150;
+    color: rgb(140, 138, 138);
+
+}
+.social-icon{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+.container-social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.content-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.arrow-down{
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 3px;
+}
