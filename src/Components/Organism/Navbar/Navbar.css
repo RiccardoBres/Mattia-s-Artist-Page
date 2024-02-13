@@ -1,15 +1,11 @@
-.custom-navbar{
-    background-color: transparent;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
 .container-navbar{
     position: fixed;
     width: 100%;
-    padding-top: 10rem;
+    background: transparent;
+    z-index: 100;
+}
+.container-navbar-content{
+    background: transparent;
 }
 
 

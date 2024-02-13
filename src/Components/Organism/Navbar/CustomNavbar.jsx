@@ -6,10 +6,16 @@ import './Navbar.css';
 
 const CustomNavbar = () => {
     return (
-        <BootstrapNavbar expand="lg" className="navbar">
-            <Container fluid className="container-navbar">
-                <NavLogo />
-                <Sidebar />
+        <BootstrapNavbar expand="lg" className="navbar container-navbar">
+            <Container fluid className='container-navbar-content'>
+                <Row className='w-100' >
+                    <Col lg={6} md={6} sm={12}>
+                        <NavLogo />
+                    </Col>
+                    <Col lg={6} md={6} sm={12}>
+                        <Sidebar />
+                    </Col>
+                </Row>
             </Container>
         </BootstrapNavbar>
     );

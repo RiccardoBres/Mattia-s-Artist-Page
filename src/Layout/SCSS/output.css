@@ -1,13 +1,13 @@
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   height: 100%;
-  min-width: 40vh;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  overflow-x: hidden;
   opacity: 0;
   transition: opacity 1s ease;
+  z-index: 1;
 }
 .sidebar.expanded {
   opacity: 1;
@@ -68,6 +68,7 @@
     width: 100%;
   }
 }
+/* sass --watch _main.scss output.css */
 body {
   font-family: "Raleway", sans-serif;
   color: #070606;

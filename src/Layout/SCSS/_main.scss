@@ -4,6 +4,8 @@
 @import 'sidebar';
 @import 'video';
 
+/* sass --watch _main.scss output.css */
+
 // Stili globali
 body {
     font-family: $font-primary;

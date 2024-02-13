@@ -2,8 +2,14 @@
     width: 150px;
 }
 .container-log{
-    z-index: 100;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+.sidebar-logo{
+    z-index: 2;
+    position: relative;
 }
 .nav-links{
     cursor: pointer;
