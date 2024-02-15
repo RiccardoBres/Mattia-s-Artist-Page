@@ -5,7 +5,7 @@ import SixthWork from '../../../Layout/ASSETS/Works/sixth4.jpg';
 
 const DrawingData = [
     {
-        category: 'illustration',
+        category: 'Illustration',
         images: [
             {
                 name: "Time Travel Adventure",
@@ -34,7 +34,7 @@ const DrawingData = [
         ]
     },
     {
-        category: 'painting',
+        category: 'Painting',
         images: [
             {
                 name: "Time Travel Adventure",

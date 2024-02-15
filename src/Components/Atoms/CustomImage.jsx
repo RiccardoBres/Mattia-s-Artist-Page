@@ -1,11 +1,20 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const CustomImage = ({ src, alt, className }) => {
-  return <img src={src} alt={alt} className={className}/>;
+  return (
+    <LazyLoadImage
+      src={src}
+      alt={alt}
+      className={className}
+      effect="blur"
+      loading="lazy" 
+    />
+  )
+
 }
 
 export default CustomImage;
 
-{/*
- <CustomImage src="/path-to-your-image.jpg" alt="Immagine personalizzata" className="custom-image-large" />
- */}
+

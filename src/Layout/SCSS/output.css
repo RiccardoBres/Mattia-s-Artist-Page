@@ -1,16 +1,19 @@
 .sidebar {
   position: absolute;
   top: 0;
+  bottom: 0;
   right: 0;
+  left: 0;
   height: 100%;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   transition: opacity 1s ease;
-  z-index: 1;
+  pointer-events: none;
 }
 .sidebar.expanded {
   opacity: 1;
+  pointer-events: auto;
 }
 .sidebar .content-sidebar {
   padding: 20px;
@@ -142,17 +145,19 @@ a:hover {
 }
 
 .button-nav {
-  padding: 14px 20px;
-  background-color: #3d3a3a;
-  color: #f8f7f6;
+  padding: 8px 20px;
+  background-color: transparent;
+  box-shadow: 2px 5px 2px -1px rgba(58, 59, 61, 0.7333333333);
+  color: #070606;
   border: none;
   border-radius: 100%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 .button-nav:hover {
   background-color: #f8f7f6;
-  color: #070606;
+  color: rgba(25, 51, 25, 0.925);
+  box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
 }
 
 .empty-button {

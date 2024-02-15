@@ -6,43 +6,10 @@ import { FaInstagram, FaFacebook, FaArrowDown } from 'react-icons/fa';
 import WorkData from '../../Molecules/WorksMolecules/WorksData';
 import DrawingData from '../../Molecules/DrawingMolecules/DrawingData';
 import { useNavigate } from 'react-router-dom';
-import { AiFillLayout } from 'react-icons/ai';
+import { GiEarthAsiaOceania } from "react-icons/gi";
+import WorksDropdown from './WorksDropdown';
+import DrawingsDropdown from './DrawingsDropdown';
 
-// Componente per il dropdown dei Commercial Works
-const WorksDropdown = ({ isOpen, toggle, categories, handleNavigation }) => (
-    <div className={`d-flex align-items-center justify-content-center flex-column ${isOpen ? 'open' : 'closed'}`}>
-        <div className="d-flex align-items-center">
-            <CustomParagraph text='Commercial Works' className='big-p nav-links mx-2 my-0' />
-            <FaArrowDown onClick={toggle} className='arrow-down' />
-        </div>
-        {isOpen && categories.map((category, index) => (
-            <CustomParagraph
-                key={index}
-                text={category.name}
-                className='small-p nav-links-works'
-                onClick={() => handleNavigation('/works/')}
-            />
-        ))}
-    </div>
-);
-
-// Componente per il dropdown dei Disegni
-const DrawingsDropdown = ({ isOpen, toggle, categories, handleNavigation }) => (
-    <div className={`d-flex align-items-center justify-content-center flex-column ${isOpen ? 'open' : 'closed'}`}>
-        <div className="d-flex align-items-center">
-            <CustomParagraph text='Drawing' className='big-p nav-links' />
-            <FaArrowDown onClick={toggle} className='arrow-down' />
-        </div>
-        {isOpen && categories.map((category, index) => (
-            <CustomParagraph
-                key={index}
-                text={category.category}
-                className='small-p nav-links-works'
-                onClick={() => handleNavigation(`/drawing/${category.category}`)}
-            />
-        ))}
-    </div>
-);
 
 const Sidebar = () => {
     const navigate = useNavigate();
@@ -59,7 +26,7 @@ const Sidebar = () => {
     return (
         <>
             <div className="container-log">
-                <CustomButton className='button-nav sidebar-logo' onClick={toggle} text={<AiFillLayout />} />
+                <CustomButton className='button-nav sidebar-logo' onClick={toggle} text={<GiEarthAsiaOceania />} />
             </div>
             <div className={`sidebar ${isOpen ? 'expanded' : ''}`}>
                 <div className="content-sidebar ">

@@ -1,0 +1,23 @@
+.about-image{
+    width: 60%;
+    height: auto;
+}
+
+.container-about-description{
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media(max-width: 450px){ 
+    .about-image{
+        width: 100%;
+    }
+    .container-about-description{
+        margin: 5px;
+        padding: 10px;
+    }
+    
+}

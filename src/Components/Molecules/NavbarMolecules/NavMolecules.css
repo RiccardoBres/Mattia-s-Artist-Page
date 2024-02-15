@@ -10,6 +10,7 @@
 .sidebar-logo{
     z-index: 2;
     position: relative;
+    font-size: 40px;
 }
 .nav-links{
     cursor: pointer;
@@ -42,5 +43,5 @@
 .arrow-down{
     cursor: pointer;
     font-size: 20px;
-    margin-top: 3px;
+    margin-top: 5px!important; 
 }

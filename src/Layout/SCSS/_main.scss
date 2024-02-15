@@ -4,6 +4,8 @@
 @import 'sidebar';
 @import 'video';
 
+
+
 /* sass --watch _main.scss output.css */
 
 // Stili globali
@@ -77,22 +79,26 @@ a:hover {
         background-color: $color-tertiary;
     }
 }
-.button-nav{
-    padding: 14px 20px;
-    background-color: $color-light-dark;
-    color: $color-background;
+
+.button-nav {
+    padding: 8px 20px;
+    background-color: transparent;
+    box-shadow: 2px 5px 2px -1px $color-light-dark;
+    color: $color-dark;
     border: none;
     border-radius: 100%;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease; 
 
     &.slide-from-left {
         @extend .slide-from-left;
     }
 
     &:hover {
-     background-color: $color-background;
-     color:$color-dark ;
+        background-color: $color-background;
+        color: rgba(25, 51, 25, 0.925) ;
+        box-shadow: 5px 7px 5px -1px $color-light-dark;
+
     }
 }
 
@@ -150,4 +156,5 @@ a:hover {
 .very-big-p {
     font-size: $text-extra-large-p;
 }
+
 

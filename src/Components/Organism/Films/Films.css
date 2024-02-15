@@ -13,4 +13,11 @@
     .col-films{
         flex-direction: column;
     }
+    .container-films{
+        min-height: 120vh;
+        padding-top: 10rem;
+    }
+    .container-films h2{
+        font-size: 22px!important;
+    }
 }

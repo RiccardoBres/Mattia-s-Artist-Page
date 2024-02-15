@@ -22,13 +22,32 @@
 .card-related-images {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+
+}
+
+.lazy-load-image-background {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
 }
 
 .related-image {
-    width: 80%;
+    width: 50%;
     height: auto;
     margin: 20px;
+}
+@media(max-width: 639px) {
+    .related-image {
+        width: 100%;
+       
+    }
+    .card-work-text{
+        width: 100%;
+    }
+    .work-video-container video {
+        width: 100%;
+    }
+    
 }
