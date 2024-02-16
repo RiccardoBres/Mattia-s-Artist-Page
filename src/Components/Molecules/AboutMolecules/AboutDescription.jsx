@@ -3,7 +3,7 @@ import './AboutMolecules.css';
 import CustomTitle from '../../Atoms/CustomTitle';
 import CustomParagraph from '../../Atoms/CustomParagraph';
 import CustomImage from '../../Atoms/CustomImage';
-import Bio from '../../../Layout/ASSETS/Bio.webp'
+import Bio from '../../../Layout/ASSETS/Bio.jpg'
 
 const AboutDescription = () => {
     const bioText = "Mattia is an Italian artist and filmmaker based in France. \

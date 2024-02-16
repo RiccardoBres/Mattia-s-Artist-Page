@@ -7,7 +7,7 @@ import CustomImage from '../../Atoms/CustomImage';
 const AboutVideo = () => {
   return (
     <div className='about-video-container'>
-      <CustomImage src={VideoAbout} />
+      <img src={VideoAbout}/>
     </div>
   )
 }
