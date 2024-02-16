@@ -6,10 +6,10 @@
 
 @media(max-width: 639px) {
     .container-about {
-        min-height: 150vh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
-
+        padding-top: 10rem;
     }
 
 }

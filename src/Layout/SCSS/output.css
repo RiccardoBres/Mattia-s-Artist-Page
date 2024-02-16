@@ -156,23 +156,24 @@ a:hover {
 }
 .button-nav:hover {
   background-color: #f8f7f6;
-  color: rgba(25, 51, 25, 0.925);
+  color: rgba(58, 59, 61, 0.7333333333);
   box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
 }
 
 .empty-button {
-  padding: 10px;
-  background-color: #f8f7f6;
-  color: #8094f8;
-  border: 1px solid #8094f8;
-  border-radius: 5px;
+  padding: 8px 20px;
+  background-color: transparent;
+  box-shadow: 2px 5px 2px -1px rgba(58, 59, 61, 0.7333333333);
+  color: whitesmoke;
+  border: none;
+  border-radius: 100%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  max-width: 150px;
+  transition: all 0.3s ease;
 }
 .empty-button:hover {
-  background-color: #8094f8;
-  color: #f8f7f6;
+  background-color: #f8f7f6;
+  color: #070606;
+  box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
 }
 
 .small-title {

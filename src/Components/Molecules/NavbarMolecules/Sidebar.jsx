@@ -21,12 +21,15 @@ const Sidebar = () => {
     const worksToggle = () => setIsWorksOpen(!isWorksOpen);
     const drawingToggle = () => setIsDrawingOpen(!isDrawingOpen);
 
-    const handleNavigation = (path) => navigate(path);
+    const handleNavigation = (path) => {
+        navigate(path);
+        setIsOpen(false);
+    }
 
     return (
         <>
             <div className="container-log">
-                <CustomButton className='button-nav sidebar-logo' onClick={toggle} text={<GiEarthAsiaOceania />} />
+                <CustomButton className={`sidebar-logo ${isOpen ? 'empty-button' : 'button-nav'}`} onClick={toggle} text={<GiEarthAsiaOceania />} />
             </div>
             <div className={`sidebar ${isOpen ? 'expanded' : ''}`}>
                 <div className="content-sidebar ">
@@ -38,6 +41,7 @@ const Sidebar = () => {
                             toggle={worksToggle}
                             categories={WorkData}
                             handleNavigation={handleNavigation}
+
                         />
                         <DrawingsDropdown
                             isOpen={isDrawingOpen}

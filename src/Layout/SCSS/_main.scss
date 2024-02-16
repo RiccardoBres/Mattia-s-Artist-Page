@@ -96,29 +96,31 @@ a:hover {
 
     &:hover {
         background-color: $color-background;
-        color: rgba(25, 51, 25, 0.925) ;
+        color:$color-light-dark;
         box-shadow: 5px 7px 5px -1px $color-light-dark;
 
     }
 }
 
 .empty-button {
-    padding: 10px;
-    background-color: $color-background;
-    color: $color-secondary;
-    border: 1px solid $color-secondary;
-    border-radius: 5px;
+    padding: 8px 20px;
+    background-color: transparent;
+    box-shadow: 2px 5px 2px -1px $color-light-dark;
+    color: whitesmoke;
+    border: none;
+    border-radius: 100%;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    max-width: 150px;
+    transition: all 0.3s ease; 
 
     &.slide-from-left {
         @extend .slide-from-left;
     }
 
     &:hover {
-        background-color: $color-secondary;
-        color: $color-background;
+        background-color: $color-background;
+        color:$color-dark;
+        box-shadow: 5px 7px 5px -1px $color-light-dark;
+
     }
 }
 

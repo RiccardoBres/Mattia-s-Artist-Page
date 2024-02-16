@@ -8,9 +8,19 @@
     margin: 50px;
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 2rem;
 }
-
+.about-video-container {
+    position: fixed; /* Cambia da "absolute" a "fixed" */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+}
+.about-video-container img{
+    width: 50%;
+}
 @media(max-width: 450px){ 
     .about-image{
         width: 100%;
@@ -18,6 +28,9 @@
     .container-about-description{
         margin: 5px;
         padding: 10px;
+    }
+    .about-video-container img{
+        width: 100%;
     }
     
 }

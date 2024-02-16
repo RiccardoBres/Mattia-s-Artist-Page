@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row, Container } from'react-bootstrap';
 import AboutDescription from '../../Molecules/AboutMolecules/AboutDescription';
+import AboutVideo from '../../Molecules/AboutMolecules/AboutVideo';
 import './about.css';
 
 const AboutContent = () => {
@@ -10,7 +11,9 @@ const AboutContent = () => {
             <Col lg={6} md={12} sm={12} xs={12}>
                 <AboutDescription/>
             </Col>
+            
         </Row>
+        <AboutVideo/>
     </Container>
   )
 }
