@@ -145,7 +145,7 @@ a:hover {
 }
 
 .button-nav {
-  padding: 8px 20px;
+  padding: 8px 15px;
   background-color: transparent;
   box-shadow: 2px 5px 2px -1px rgba(58, 59, 61, 0.7333333333);
   color: #070606;
@@ -161,7 +161,7 @@ a:hover {
 }
 
 .empty-button {
-  padding: 8px 20px;
+  padding: 8px 15px;
   background-color: transparent;
   box-shadow: 2px 5px 2px -1px rgba(58, 59, 61, 0.7333333333);
   color: whitesmoke;

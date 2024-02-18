@@ -1,5 +1,5 @@
 .nav-logo{
-    width: 150px;
+    width: 100px;
 }
 .container-log{
     display: flex;
@@ -10,7 +10,7 @@
 .sidebar-logo{
     z-index: 2;
     position: relative;
-    font-size: 40px;
+    font-size: 25px;
     
 }
 .nav-links{
