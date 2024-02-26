@@ -4,6 +4,7 @@ import About from './Pages/About';
 import Films from './Pages/Films';
 import Works from './Pages/Works';
 import Drawing from './Pages/Drawing';
+import Contact from './Pages/Contact';
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/films" element={<Films />} />
         <Route path="/works" element={<Works />} />
         <Route path="/drawing/:category" element={<Drawing />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   )

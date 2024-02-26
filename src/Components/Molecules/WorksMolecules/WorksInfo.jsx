@@ -20,12 +20,12 @@ const WorksInfo = () => {
                             </div>
                             <div className="card-related-images">
                                 {work.images.map((image, idx) => (
-                                    <CustomImage
-                                        src={image}
-                                        alt={`Image ${idx}`}
-                                        key={idx}
-                                        className='related-image'
-                                    />
+                                        <CustomImage
+                                            src={image}
+                                            alt={`Image ${idx}`}
+                                            className='related-image'
+                                            key={idx}
+                                        />
                                 ))}
                             </div>
                         </div>

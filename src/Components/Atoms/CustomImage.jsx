@@ -11,10 +11,7 @@ const CustomImage = ({ src, alt, className }) => {
       effect="blur"
       loading="lazy" 
     />
-  )
-
-}
+  );
+};
 
 export default CustomImage;
-
-

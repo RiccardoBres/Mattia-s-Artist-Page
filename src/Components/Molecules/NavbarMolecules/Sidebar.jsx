@@ -6,7 +6,8 @@ import { FaInstagram, FaFacebook, FaArrowDown } from 'react-icons/fa';
 import WorkData from '../../Molecules/WorksMolecules/WorksData';
 import DrawingData from '../../Molecules/DrawingMolecules/DrawingData';
 import { useNavigate } from 'react-router-dom';
-import { GiEarthAsiaOceania } from "react-icons/gi";
+import { AiOutlineMenu } from "react-icons/ai";
+
 import WorksDropdown from './WorksDropdown';
 import DrawingsDropdown from './DrawingsDropdown';
 
@@ -29,7 +30,7 @@ const Sidebar = () => {
     return (
         <>
             <div className="container-log">
-                <CustomButton className={`sidebar-logo ${isOpen ? 'empty-button' : 'button-nav'}`} onClick={toggle} text={<GiEarthAsiaOceania />} />
+                <CustomButton className={`sidebar-logo ${isOpen ? 'empty-button-nav' : 'button-nav'}`} onClick={toggle} text={<AiOutlineMenu />} />
             </div>
             <div className={`sidebar ${isOpen ? 'expanded' : ''}`}>
                 <div className="content-sidebar ">
@@ -41,7 +42,6 @@ const Sidebar = () => {
                             toggle={worksToggle}
                             categories={WorkData}
                             handleNavigation={handleNavigation}
-
                         />
                         <DrawingsDropdown
                             isOpen={isDrawingOpen}
@@ -49,7 +49,7 @@ const Sidebar = () => {
                             categories={DrawingData}
                             handleNavigation={handleNavigation}
                         />
-                        <CustomParagraph text='Contacts' className='big-p nav-links' />
+                        <CustomParagraph text='Contacts' className='big-p nav-links' onClick={() => handleNavigation('/contact')}/>
                     </div>
                     <div className="container-social-icons">
                         <FaInstagram className='social-icon' />

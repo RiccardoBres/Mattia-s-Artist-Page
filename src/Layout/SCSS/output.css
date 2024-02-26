@@ -1,3 +1,8 @@
+/* $color-primary: #CDFCF6;
+$color-tertiary: #9cb9fb;
+$color-dark: #070606;
+$color-light-dark:#3a3b3dbb;
+$color-background: #f8f7f6; */
 .sidebar {
   position: absolute;
   top: 0;
@@ -74,8 +79,8 @@
 /* sass --watch _main.scss output.css */
 body {
   font-family: "Raleway", sans-serif;
-  color: #070606;
-  background-color: #f8f7f6 !important;
+  color: #3C3633;
+  background-color: #EEEDEB !important;
   line-height: 1.6;
 }
 
@@ -84,7 +89,7 @@ p {
 }
 
 .container {
-  background-color: #f8f7f6;
+  background-color: #EEEDEB;
 }
 
 h1,
@@ -98,15 +103,15 @@ h6 {
 }
 
 a {
-  color: #8094f8;
+  color: #E0CCBE;
   text-decoration: none;
 }
 
 a:hover {
-  color: #9cb9fb;
+  color: #3C3633;
 }
 
-.slide-from-left, .empty-button.slide-from-left, .button-nav.slide-from-left, .button.slide-from-left {
+.slide-from-left {
   transform: translateX(-100%);
   opacity: 1;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -133,47 +138,85 @@ a:hover {
 
 .button {
   padding: 10px 20px;
-  background-color: #070606;
-  color: #f8f7f6;
+  background-color: #3C3633;
+  color: #EEEDEB;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 5px 7px 5px -1px #E0CCBE;
 }
 .button:hover {
-  background-color: #9cb9fb;
+  background-color: #EEEDEB;
+  color: #E0CCBE;
+  box-shadow: 5px 7px 5px -1px #E0CCBE;
 }
 
 .button-nav {
   padding: 8px 15px;
   background-color: transparent;
-  box-shadow: 2px 5px 2px -1px rgba(58, 59, 61, 0.7333333333);
-  color: #070606;
+  box-shadow: 0px 2px 0px -1px #E0CCBE;
+  color: #3C3633;
   border: none;
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button-nav:hover {
-  background-color: #f8f7f6;
-  color: rgba(58, 59, 61, 0.7333333333);
-  box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
+  color: #3C3633;
+  box-shadow: 5px 7px 5px -1px #E0CCBE;
 }
 
-.empty-button {
+.empty-button-nav {
   padding: 8px 15px;
   background-color: transparent;
-  box-shadow: 2px 5px 2px -1px rgba(58, 59, 61, 0.7333333333);
-  color: whitesmoke;
+  box-shadow: 2px 5px 2px -1px #E0CCBE;
+  color: #EEEDEB;
   border: none;
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.empty-button-nav:hover {
+  background-color: #EEEDEB;
+  color: #3C3633;
+  box-shadow: 0px 2px 0px -1px #747264;
+}
+
+.empty-button {
+  padding: 10px 20px;
+  background-color: #EEEDEB;
+  color: #3C3633;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid #E0CCBE;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 .empty-button:hover {
-  background-color: #f8f7f6;
-  color: #070606;
-  box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
+  background-color: #3C3633;
+  color: #EEEDEB;
+}
+
+.input {
+  background-color: #EEEDEB;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #E0CCBE;
+  min-width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #3C3633;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .small-title {

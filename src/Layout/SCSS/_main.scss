@@ -36,12 +36,12 @@ h6 {
 
 
 a {
-    color: $color-secondary;
+    color: $color-light-dark;
     text-decoration: none;
 }
 
 a:hover {
-    color: $color-tertiary;
+    color: $color-dark;
 }
 
 // Classi di animazione
@@ -67,63 +67,87 @@ a:hover {
     background-color: $color-dark;
     color: $color-background;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
-    &.slide-from-left {
-        @extend .slide-from-left;
-    }
+    box-shadow: 5px 7px 5px -1px $color-light-dark;
 
     &:hover {
-        background-color: $color-tertiary;
+        background-color: $color-background;
+        color:$color-light-dark;
+        box-shadow: 5px 7px 5px -1px $color-light-dark;
     }
 }
 
 .button-nav {
     padding: 8px 15px;
     background-color: transparent;
-    box-shadow: 2px 5px 2px -1px $color-light-dark;
+    box-shadow: 0px 2px 0px -1px $color-light-dark;
     color: $color-dark;
     border: none;
     border-radius: 100%;
     cursor: pointer;
     transition: all 0.3s ease; 
 
-    &.slide-from-left {
-        @extend .slide-from-left;
-    }
-
     &:hover {
-        background-color: $color-background;
-        color:$color-light-dark;
-        box-shadow: 5px 7px 5px -1px $color-light-dark;
-
-    }
-}
-
-.empty-button {
-    padding: 8px 15px;
-    background-color: transparent;
-    box-shadow: 2px 5px 2px -1px $color-light-dark;
-    color: whitesmoke;
-    border: none;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: all 0.3s ease; 
-
-    &.slide-from-left {
-        @extend .slide-from-left;
-    }
-
-    &:hover {
-        background-color: $color-background;
         color:$color-dark;
         box-shadow: 5px 7px 5px -1px $color-light-dark;
 
     }
 }
+.empty-button-nav {
+    padding: 8px 15px;
+    background-color: transparent;
+    box-shadow: 2px 5px 2px -1px $color-light-dark;
+    color: $color-background;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease; 
 
+    &:hover {
+        background-color: $color-background;
+        color:$color-dark;
+        box-shadow: 0px 2px 0px -1px $color-primary;
+
+    }
+}
+
+.empty-button {
+    padding: 10px 20px;
+    background-color: $color-background;
+    color: $color-dark;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid $color-light-dark;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+
+    &:hover {
+        background-color: $color-dark;
+        color:$color-background;
+    }
+}
+.input {
+    background-color: $color-background;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $color-light-dark; 
+    min-width: 250px;
+    transition: border-color 0.3s ease; 
+}
+
+.input:focus {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $color-dark; 
+}
+.text-center{
+    text-align: center;
+}
 .small-title {
     font-size: $text-small-title;
 }
