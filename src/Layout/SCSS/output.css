@@ -1,3 +1,7 @@
+/* $color-primary: #747264;
+$color-dark: #3C3633;
+$color-light-dark:#E0CCBE;
+$color-background: #EEEDEB; */
 /* $color-primary: #CDFCF6;
 $color-tertiary: #9cb9fb;
 $color-dark: #070606;
@@ -79,8 +83,8 @@ $color-background: #f8f7f6; */
 /* sass --watch _main.scss output.css */
 body {
   font-family: "Raleway", sans-serif;
-  color: #3C3633;
-  background-color: #EEEDEB !important;
+  color: #070606;
+  background-color: #f8f7f6 !important;
   line-height: 1.6;
 }
 
@@ -89,7 +93,7 @@ p {
 }
 
 .container {
-  background-color: #EEEDEB;
+  background-color: #f8f7f6;
 }
 
 h1,
@@ -103,12 +107,12 @@ h6 {
 }
 
 a {
-  color: #E0CCBE;
+  color: rgba(58, 59, 61, 0.7333333333);
   text-decoration: none;
 }
 
 a:hover {
-  color: #3C3633;
+  color: #070606;
 }
 
 .slide-from-left {
@@ -138,72 +142,72 @@ a:hover {
 
 .button {
   padding: 10px 20px;
-  background-color: #3C3633;
-  color: #EEEDEB;
+  background-color: #070606;
+  color: #f8f7f6;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: 5px 7px 5px -1px #E0CCBE;
+  box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
 }
 .button:hover {
-  background-color: #EEEDEB;
-  color: #E0CCBE;
-  box-shadow: 5px 7px 5px -1px #E0CCBE;
+  background-color: #f8f7f6;
+  color: rgba(58, 59, 61, 0.7333333333);
+  box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
 }
 
 .button-nav {
   padding: 8px 15px;
   background-color: transparent;
-  box-shadow: 0px 2px 0px -1px #E0CCBE;
-  color: #3C3633;
+  box-shadow: 0px 2px 0px -1px rgba(58, 59, 61, 0.7333333333);
+  color: #070606;
   border: none;
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button-nav:hover {
-  color: #3C3633;
-  box-shadow: 5px 7px 5px -1px #E0CCBE;
+  color: #070606;
+  box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
 }
 
 .empty-button-nav {
   padding: 8px 15px;
   background-color: transparent;
-  box-shadow: 2px 5px 2px -1px #E0CCBE;
-  color: #EEEDEB;
+  box-shadow: 2px 5px 2px -1px rgba(58, 59, 61, 0.7333333333);
+  color: #f8f7f6;
   border: none;
   border-radius: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .empty-button-nav:hover {
-  background-color: #EEEDEB;
-  color: #3C3633;
+  background-color: #f8f7f6;
+  color: #070606;
   box-shadow: 0px 2px 0px -1px #747264;
 }
 
 .empty-button {
   padding: 10px 20px;
-  background-color: #EEEDEB;
-  color: #3C3633;
+  background-color: #f8f7f6;
+  color: #070606;
   border: none;
   border-radius: 20px;
-  border: 1px solid #E0CCBE;
+  border: 1px solid rgba(58, 59, 61, 0.7333333333);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .empty-button:hover {
-  background-color: #3C3633;
-  color: #EEEDEB;
+  background-color: #070606;
+  color: #f8f7f6;
 }
 
 .input {
-  background-color: #EEEDEB;
+  background-color: #f8f7f6;
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #E0CCBE;
+  border-bottom: 1px solid rgba(58, 59, 61, 0.7333333333);
   min-width: 250px;
   transition: border-color 0.3s ease;
 }
@@ -212,7 +216,7 @@ a:hover {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid #3C3633;
+  border-bottom: 1px solid #070606;
 }
 
 .text-center {

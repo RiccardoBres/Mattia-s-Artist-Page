@@ -7,17 +7,23 @@ import './Navbar.css';
 const CustomNavbar = () => {
     return (
 
-        <Navbar className="navbar container-navbar">
-            <Container className='container-navbar-content'>
-                <Navbar.Brand href="/">  <NavLogo /></Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse className="justify-content-end">
-                    <Navbar.Text>
-                        <Sidebar />
-                    </Navbar.Text>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        /*  <Navbar className="navbar container-navbar">
+             <Container className='container-navbar-content'>
+                 <Navbar.Brand href="/">  <NavLogo /></Navbar.Brand>
+                 <Navbar.Toggle />
+                 <Navbar.Collapse >
+                     <Navbar.Text>
+                         <Sidebar />
+                     </Navbar.Text>
+                 </Navbar.Collapse>
+             </Container>
+         </Navbar> */
+        <div className="container-navbar">
+            <div className="container-navbar-content">
+                <NavLogo />
+                <Sidebar />
+            </div>
+        </div>
     );
 }
 

@@ -3,10 +3,16 @@
     width: 100%;
     background: transparent;
     z-index: 100;
+    padding-top: 2rem;
 }
 .container-navbar-content{
     background: transparent;
     padding-right: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    width: auto;
+    gap: 45%
 }
 
 

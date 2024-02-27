@@ -19,13 +19,16 @@
     right: 0;
     bottom: 0;
     left: 0px;
-    width: 100%;
+    width: auto;
     height: auto;
     justify-content: end;
    
 }
 .about-video-container img{
-    width: 50%;
+    width: auto;
+    height: 100%;
+    opacity: 0.7;
+    overflow: hidden;
 }
 @media(max-width: 450px){ 
     .about-image{

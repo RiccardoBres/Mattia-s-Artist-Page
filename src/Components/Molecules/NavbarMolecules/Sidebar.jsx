@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CustomParagraph from '../../Atoms/CustomParagraph';
 import CustomButton from '../../Atoms/CustomButton';
 import './NavMolecules.css';
+import CustomTitle from '../../Atoms/CustomTitle';
 import { FaInstagram, FaFacebook, FaArrowDown } from 'react-icons/fa';
 import WorkData from '../../Molecules/WorksMolecules/WorksData';
 import DrawingData from '../../Molecules/DrawingMolecules/DrawingData';
@@ -35,8 +36,36 @@ const Sidebar = () => {
             <div className={`sidebar ${isOpen ? 'expanded' : ''}`}>
                 <div className="content-sidebar ">
                     <div className="content-links">
-                        <CustomParagraph text='About' onClick={() => handleNavigation('/')} className='big-p nav-links' />
-                        <CustomParagraph text='Films' className='big-p nav-links' onClick={() => handleNavigation('/films')} />
+                        <CustomTitle text='DEMO REEL' className='small-title nav-links1' />
+                        <CustomTitle text='ANIMATION' className='small-title nav-links2' />
+                        <CustomTitle text='VISUAL DEVELOPMENT' className='small-title nav-links3' />
+                        <CustomTitle text='COMMERCIAL WORK' className='small-title nav-links4' />
+                        <CustomTitle text='PERSONAL' className='small-title nav-links5' />
+                        <CustomTitle text='ILLUSTRATION' className='small-title nav-links6' />
+                        <CustomTitle text='SKETCHES' className='small-title nav-links7' />
+                        <CustomTitle text='COMIC' className='small-title nav-links8' />
+                        <CustomTitle text='ACADEMICAL' className='small-title nav-links9' />
+                        <CustomTitle text='ABOUT' className='small-title nav-links10' />
+                        <CustomTitle text='SHOP' className='small-title nav-links11' />
+                        <CustomTitle text='CONTACT ME' className='small-title nav-links12' />
+                        <div className="container-social-icons">
+                            <FaInstagram className='social-icon' />
+                            <FaFacebook className='social-icon' />
+                            <FaInstagram className='social-icon' />
+                            <FaFacebook className='social-icon' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+}
+
+export default Sidebar;
+
+/* 
+  <CustomParagraph text='About' onClick={() => handleNavigation('/')} className='big-p nav-links' />
+                        <CustomParagraph text='Animation' className='big-p nav-links' onClick={() => handleNavigation('/films')} />
                         <WorksDropdown
                             isOpen={isWorksOpen}
                             toggle={worksToggle}
@@ -49,16 +78,4 @@ const Sidebar = () => {
                             categories={DrawingData}
                             handleNavigation={handleNavigation}
                         />
-                        <CustomParagraph text='Contacts' className='big-p nav-links' onClick={() => handleNavigation('/contact')}/>
-                    </div>
-                    <div className="container-social-icons">
-                        <FaInstagram className='social-icon' />
-                        <FaFacebook className='social-icon' />
-                    </div>
-                </div>
-            </div>
-        </>
-    );
-}
-
-export default Sidebar;
+                        <CustomParagraph text='Contacts' className='big-p nav-links' onClick={() => handleNavigation('/contact')}/> */

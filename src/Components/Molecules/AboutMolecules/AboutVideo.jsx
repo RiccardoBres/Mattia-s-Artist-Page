@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMolecules.css';
-import VideoAbout from '../../../Layout/VIDEO/AboutVideo.gif';
+import VideoAbout from '../../../Layout/VIDEO/VideoGIFDrago.gif';
 import CustomImage from '../../Atoms/CustomImage';
 
 

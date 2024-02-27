@@ -6,16 +6,12 @@ import CustomImage from '../../Atoms/CustomImage';
 import Bio from '../../../Layout/ASSETS/Bio.jpg'
 
 const AboutDescription = () => {
-    const bioText = "Mattia is an Italian artist and filmmaker based in France. \
-He studied at Accademia di Belle Arti di Roma for his bachelor's degree. \
-In 2017, he moved to Paris to study character animation and animated filmmaking in Gobelins, l'école de l'image, and graduated in 2019 with his graduation film Blind Eye. \
-He has a passion for storytelling and drawing. He specializes in directing, art direction, concept art, and illustration. He also works as a storyboarder, character designer, and comic artist. \
-He is currently studying and developing his projects at La Poudrière in Valence, France.";
+    const bioText = "Mattia Ronconi, Italian artist based in Porto, pursued a double degree in product design from UNIFE (Italy) and PUCPR (Brazil), deepens his studies in the master’s degree in illustration and animation at IPCA (Portugal). Currently, he works as a visual developer artist and 2D animator at the production company Amarela Mecânica. Paralellaly, he immerses in various personal projects spanning animation, illustration, comics, tattooing, and street art. In December 2023, he curated the art exhibition MOSTRALGIA, showcasing pieces that explore the convergence of analogue art with digital technologies, encompassing digital animation and augmented reality. In early 2024, alongside Ana Lopes, he co-founded CAFU Collective, dedicated to the development of multidisciplinary projects.";
 
     return (
         <div className="container-about-description">
             <img src={Bio} alt="Bio" className='about-image' />
-            <CustomParagraph text={bioText} className='medium-p' />
+            <CustomParagraph text={bioText} className='small-p' />
         </div>
     )
 }
