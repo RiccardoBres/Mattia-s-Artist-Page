@@ -68,31 +68,30 @@
     cursor: pointer;
     font-size: 20pt!important;
     letter-spacing: 6.5pt; 
-    font-weight: 500!important;
-
+    font-weight: 300!important;
 }
 .nav-links9{
     cursor: pointer;
-    font-size: 20pt!important;
+    font-size: 18pt!important;
     letter-spacing: 0px; 
     font-weight: 500!important;   
     
 }
 .nav-links10{
     cursor: pointer;
-    font-size: 20pt!important;
+    font-size: 18pt!important;
     letter-spacing: 0px;  
     font-weight: 500!important;      
 }
 .nav-links11{
     cursor: pointer;
-    font-size: 20pt!important;
+    font-size: 18pt!important;
     letter-spacing: 1.5px;
     font-weight: 500!important;        
 }
 .nav-links12{
     cursor: pointer;
-    font-size: 20pt!important;
+    font-size: 18pt!important;
     letter-spacing: 0px;   
     font-weight: 500!important;     
 }
@@ -134,5 +133,6 @@
     .nav-links4{
         letter-spacing: 5pt;
     }
+    
     
 }
