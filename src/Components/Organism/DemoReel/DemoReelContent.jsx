@@ -11,8 +11,6 @@ const DemoReelContent = () => {
                     <div className="container-demo-video">
                         <iframe
                             src="https://player.vimeo.com/video/651771461"
-                            width="100%"
-                            height="auto"
                             frameborder="0"
                             allow="autoplay; fullscreen; picture-in-picture"
                             allowfullscreen
