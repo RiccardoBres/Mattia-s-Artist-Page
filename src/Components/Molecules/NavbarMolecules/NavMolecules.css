@@ -1,118 +1,114 @@
-.nav-logo{
-    width: 150px;
+.nav-logo {
+    width: 100px;
 }
-.container-log{
+
+.container-log {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
 }
-.sidebar-logo{
+
+.sidebar-logo {
     z-index: 2;
     position: relative;
     font-size: 25px;
+}
+
+.nav-links {
+    cursor: pointer;
+    font-weight: 300!important;
     
 }
-.nav-links1{
-    cursor: pointer;
-    font-size: 20pt!important;
-    letter-spacing: 4.9pt; 
-    font-weight: 300!important;
+
+.small-title-nav {
+    position: relative; 
+    overflow: hidden;
 }
-.nav-links2{
+
+.small-title-nav::before {
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 0;
+    height: 1px; 
+    background-color: #fbf8f8;
+    transition: width 0.3s ease; 
+}
+
+.small-title-nav:hover::before {
+    width: 100%; 
+}
+
+
+.nav-links1 {
+    letter-spacing: 4.9pt;
     cursor: pointer;
-    font-size: 20pt!important;
-    letter-spacing: 8.5pt;
-    font-weight: 300!important;
+    font-size: 15pt!important;
+}
+
+.nav-links2 {
+    letter-spacing: 10.5pt;
+    cursor: pointer;
+    font-size: 15pt!important;
 
 }
-.nav-links3{
-    cursor: pointer;
-    font-size: 20pt!important;
+
+.nav-links3 {
     letter-spacing: 4.5pt;
-    font-weight: 300!important;
-
-    
-}
-.nav-links4{
     cursor: pointer;
-    font-size: 20pt!important;
-    letter-spacing: 9pt;  
-    font-weight: 300!important;
-  
-}
-.nav-links5{
-    cursor: pointer;
-    font-size: 20pt!important;
-    letter-spacing: 9pt; 
-    font-weight: 300!important;
-   
-    
-}
-.nav-links6{
-    cursor: pointer;
-    font-size: 20pt!important;
-    letter-spacing: 2pt;    
-    font-weight: 300!important;
+    font-size: 15pt!important;
 
 }
-.nav-links7{
+
+.nav-links4,
+.nav-links5 {
+    letter-spacing: 12pt;
     cursor: pointer;
-    font-size: 20pt!important;
-    letter-spacing: 6.5pt; 
-    font-weight: 300!important;
-   
-    
+    font-size: 15pt!important;
+
 }
-.nav-links8{
+
+.nav-links6 {
+    letter-spacing: 2pt;
     cursor: pointer;
-    font-size: 20pt!important;
-    letter-spacing: 6.5pt; 
-    font-weight: 300!important;
+    font-size: 15pt!important;
+
 }
-.nav-links9{
+
+.nav-links7,
+.nav-links8 {
+    letter-spacing: 9.5pt;
     cursor: pointer;
-    font-size: 18pt!important;
-    letter-spacing: 0px; 
-    font-weight: 500!important;   
-    
+    font-size: 15pt!important;
+
+
 }
-.nav-links10{
+
+.nav-links9,
+.nav-links10 {
+    font-size: 14pt!important;
     cursor: pointer;
-    font-size: 18pt!important;
-    letter-spacing: 0px;  
-    font-weight: 500!important;      
 }
-.nav-links11{
-    cursor: pointer;
-    font-size: 18pt!important;
-    letter-spacing: 1.5px;
-    font-weight: 500!important;        
-}
+
+.nav-links11 ,
 .nav-links12{
+    letter-spacing: 1.5px;
     cursor: pointer;
-    font-size: 18pt!important;
-    letter-spacing: 0px;   
-    font-weight: 500!important;     
-}
-.nav-links-works{
-    cursor: pointer;
-    z-index: 150;
-    color: rgb(140, 138, 138);
+    font-size: 14pt!important;
 
 }
-.social-icon{
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
-.container-social-icons{
+
+.container-social-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
+    font-size: 23px;
 }
+
 .content-links {
     display: flex;
     align-items: center;
@@ -120,19 +116,19 @@
     flex-direction: column;
     gap: 4.8pt;
 }
-.arrow-down{
+
+.arrow-down {
     cursor: pointer;
     font-size: 20px;
-    margin-top: 5px!important; 
+    margin-top: 5px!important;
 }
 
-@media(max-width:450px){
-    .content-links h2{
+@media(max-width: 450px) {
+    .content-links h2 {
         font-size: 15pt!important;
     }
-    .nav-links4{
+
+    .nav-links4 {
         letter-spacing: 5pt;
     }
-    
-    
 }

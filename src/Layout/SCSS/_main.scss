@@ -62,6 +62,10 @@ a:hover {
 }
 
 // Classi utilità
+
+.cursor-pointer{
+    cursor: pointer;
+}
 .button {
     padding: 10px 20px;
     background-color: $color-dark;
@@ -82,7 +86,6 @@ a:hover {
 .button-nav {
     padding: 8px 15px;
     background-color: transparent;
-    box-shadow: 0px 2px 0px -1px $color-light-dark;
     color: $color-dark;
     border: none;
     border-radius: 100%;
@@ -91,14 +94,13 @@ a:hover {
 
     &:hover {
         color:$color-dark;
-        box-shadow: 5px 7px 5px -1px $color-light-dark;
+        box-shadow: 0px 2px 0px -1px $color-light-dark;
 
     }
 }
 .empty-button-nav {
     padding: 8px 15px;
     background-color: transparent;
-    box-shadow: 2px 5px 2px -1px $color-light-dark;
     color: $color-background;
     border: none;
     border-radius: 100%;
@@ -117,7 +119,6 @@ a:hover {
     color: $color-dark;
     border: none;
     border-radius: 20px;
-    border: 1px solid $color-light-dark;
     cursor: pointer;
     transition: all 0.3s ease;
 

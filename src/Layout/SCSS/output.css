@@ -37,14 +37,12 @@ $color-background: #f8f7f6; */
 .card-video {
   position: relative;
   display: flex;
-  width: 30%;
-  margin: 20px;
+  width: 100%;
 }
 
 .card-video video {
   width: 100%;
   height: auto;
-  z-index: -20;
 }
 
 .card-video-text {
@@ -61,7 +59,8 @@ $color-background: #f8f7f6; */
   flex-direction: column;
   text-align: center;
   opacity: 0;
-  z-index: -20;
+  /*     z-index: -20;
+   */
   transition: opacity 0.3s ease;
   padding: 20px;
 }
@@ -78,6 +77,7 @@ $color-background: #f8f7f6; */
 @media (max-width: 650px) {
   .card-video {
     width: 100%;
+    margin: 20px 0;
   }
 }
 /* sass --watch _main.scss output.css */
@@ -140,6 +140,10 @@ a:hover {
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .button {
   padding: 10px 20px;
   background-color: #070606;
@@ -159,7 +163,6 @@ a:hover {
 .button-nav {
   padding: 8px 15px;
   background-color: transparent;
-  box-shadow: 0px 2px 0px -1px rgba(58, 59, 61, 0.7333333333);
   color: #070606;
   border: none;
   border-radius: 100%;
@@ -168,13 +171,12 @@ a:hover {
 }
 .button-nav:hover {
   color: #070606;
-  box-shadow: 5px 7px 5px -1px rgba(58, 59, 61, 0.7333333333);
+  box-shadow: 0px 2px 0px -1px rgba(58, 59, 61, 0.7333333333);
 }
 
 .empty-button-nav {
   padding: 8px 15px;
   background-color: transparent;
-  box-shadow: 2px 5px 2px -1px rgba(58, 59, 61, 0.7333333333);
   color: #f8f7f6;
   border: none;
   border-radius: 100%;
@@ -192,7 +194,6 @@ a:hover {
   color: #070606;
   border: none;
   border-radius: 20px;
-  border: 1px solid rgba(58, 59, 61, 0.7333333333);
   cursor: pointer;
   transition: all 0.3s ease;
 }

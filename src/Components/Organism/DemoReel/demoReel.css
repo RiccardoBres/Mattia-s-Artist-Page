@@ -1,0 +1,27 @@
+.demo-reel-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container-demo-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-demo-video h2{
+    letter-spacing: 4.9pt;
+}
+.container-demo-video iframe{
+    min-width:  900px;
+    min-height: 700px;
+}
+@media(max-width: 650px){
+    .container-demo-video iframe{
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+}

@@ -6,8 +6,19 @@ import './Navbar.css';
 
 const CustomNavbar = () => {
     return (
+        <div className="container-navbar">
+            <div className="container-navbar-content-full">
+                <NavLogo />
+                <Sidebar />
+            </div>
+        </div>
+    );
+}
 
-        /*  <Navbar className="navbar container-navbar">
+export default CustomNavbar;
+
+
+/*  <Navbar className="navbar container-navbar">
              <Container className='container-navbar-content'>
                  <Navbar.Brand href="/">  <NavLogo /></Navbar.Brand>
                  <Navbar.Toggle />
@@ -18,14 +29,4 @@ const CustomNavbar = () => {
                  </Navbar.Collapse>
              </Container>
          </Navbar> */
-        <div className="container-navbar">
-            <div className="container-navbar-content">
-                <NavLogo />
-                <Sidebar />
-            </div>
-        </div>
-    );
-}
-
-export default CustomNavbar;
 

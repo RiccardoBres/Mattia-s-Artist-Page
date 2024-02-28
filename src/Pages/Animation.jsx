@@ -1,16 +1,16 @@
 import React from 'react';
 import CustomNavbar from '../Components/Organism/Navbar/CustomNavbar';
-import FilmsContent from '../Components/Organism/Films/FilmsContent';
+import AnimationContent from '../Components/Organism/Animations/AnimationContent';
 
 
-const Films = () => {
+const Animation = () => {
     return (
         <>
             <CustomNavbar />
-            <FilmsContent />
+            <AnimationContent />
         </>
 
     )
 }
 
-export default Films
+export default Animation

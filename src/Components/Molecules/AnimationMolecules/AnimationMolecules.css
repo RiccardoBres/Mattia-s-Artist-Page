@@ -1,0 +1,15 @@
+.container-video-animation-details video{
+    max-width: 600px;
+}
+.animation-details{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:768px){
+    .container-video-animation-details video{
+        max-width: auto;
+        width: 100%;
+    }
+}

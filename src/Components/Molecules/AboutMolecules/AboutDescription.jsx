@@ -11,7 +11,7 @@ const AboutDescription = () => {
     return (
         <div className="container-about-description">
             <img src={Bio} alt="Bio" className='about-image' />
-            <CustomParagraph text={bioText} className='small-p' />
+            <CustomParagraph text={bioText} className='medium-p' />
         </div>
     )
 }
