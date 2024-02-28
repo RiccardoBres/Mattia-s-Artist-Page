@@ -19,8 +19,9 @@ const AnimationCard = () => {
                     <div className="card-video">
                         <video autoPlay={true} src={animation.src} muted={true} key={index} loop={true}></video>
                         <div className="card-video-text">
-                            <CustomTitle text={animation.name} onClick={() => handleDetails(animation.id)} className='very-big-title cursor-pointer' />
+                            <CustomTitle text={animation.name} className='very-big-title cursor-pointer' />
                             <CustomParagraph text={animation.dateOfPublication}  onClick={() => handleDetails(animation.id)} className='small-p' />
+                            <CustomParagraph text='DETAILS' onClick={() => handleDetails(animation.id)} className='small-p cursor-pointer mt-3' />
                         </div>
                     </div>
                 </Col>

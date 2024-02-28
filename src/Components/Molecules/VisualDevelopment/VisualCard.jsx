@@ -20,8 +20,9 @@ const VisualCard = () => {
                     <div className="card-video my-3">
                         <video autoPlay={false} src={visual.src} muted={true} key={index} loop={true}></video>
                         <div className="card-video-text">
-                            <CustomTitle text={visual.name} onClick={() => handleDetails(visual.id)} className='big-title cursor-pointer' />
+                            <CustomTitle text={visual.name} className='big-title cursor-pointer' />
                             <CustomParagraph text={visual.dateOfPublication}  onClick={() => handleDetails(visual.id)} className='small-p' />
+                            <CustomParagraph text='DETAILS' onClick={() => handleDetails(visual.id)} className='small-p cursor-pointer mt-3' />
                         </div>
                     </div>
                 </Col>
