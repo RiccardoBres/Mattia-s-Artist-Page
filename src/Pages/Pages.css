@@ -1,0 +1,46 @@
+.coming-soon-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .message {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  .contact-info {
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+  }
+  
+.coming-soon-video-container img{
+    width: auto;
+    height: 25rem;
+    opacity: 0.8!important;
+}
+
+@media(max-width: 450px) {
+
+    .coming-soon-video-container img {
+        width: 100%!important;
+        opacity: 0.3;
+        position: fixed;
+        display: flex;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        justify-content: end;
+    }
+
+}
